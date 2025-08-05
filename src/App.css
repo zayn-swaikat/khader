@@ -1,3 +1,14 @@
+html, body {
+  height: 100%;
+  overflow: hidden;
+  touch-action: none;
+}
+
+.tootsie-container,
+.greeting-page {
+  min-height: 100vh;
+}
+
 * {
   margin: 0;
 }
@@ -10,14 +21,13 @@
 .App {
   position: relative;
   height: 100vh;
+  width: 100vw;
   overflow: hidden;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: snow;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 0;
-  padding: 0;
 }
 
 .background {
@@ -177,4 +187,27 @@
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 480px) {
+  .tootsie-button {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+
+  .tootsie-button:hover {
+    transform: scale(1.1);
+  }
+
+  .press-count {
+    font-size: 14px;
+  }
+
+  .greeting-content h1 {
+    font-size: 1.4rem;
+  }
+
+  .greeting-content p {
+    font-size: 1rem;
+  }
 }

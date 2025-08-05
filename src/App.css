@@ -50,10 +50,18 @@ html, body {
 }
 
 .tootsie-container {
-  color: aliceblue;
-  text-align: center;
-  font-family: "Segoe UI", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  height: 100vh; /* هي المهمة */
+  width: 100%;
   padding: 40px;
+  text-align: center;
+
+  color: aliceblue;
+  font-family: "Segoe UI", sans-serif;
   border-radius: 20px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
   position: relative;

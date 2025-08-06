@@ -26,13 +26,12 @@ export default function TootsieButton() {
         countEl.style.animation = null;
       }
     } else {
-      // ✅ شغل الغنية و بعدين انقل للمعايدة
       birthdaySong.currentTime = 0;
       birthdaySong.play();
 
       setTimeout(() => {
         navigate("/greeting");
-      }, 2000); // ناطرين ثانيتين مشان تسمع أول الغنية 😎
+      }, 10); // ناطرين ثانيتين مشان تسمع أول الغنية 😎
     }
   };
 
